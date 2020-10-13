@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HomePage
+        </title>
+        <title>SIGNUP</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container" style="margin: auto;">
+            <form method="POST" name="questionairre">
+                <br>
+                <h1 style="text-align: center;">Clothes Matching Questionaire</h1>
+                <h4 style="text-align: center;">Please Select the chechboxes next to the pants to which the shirts/tshirts match(Please try to select atleast 1)</h4><br>
+                <!-- <input type="text" class="form-control" name="user_name" placeholder="Enter Name" style="width:100%;" id="name" required><br> -->
+                <div class="row">
+                    <h3>10.</h3>
+                    <div class="col sm-1 form-group">
+                        <img src="{{path}}" width="40%" height="80%">
+                    </div>
+                    <div class="col sm-5 form-group">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox1" value="pant1">
+                          <label class="form-check-label" for="inlineCheckbox1"><img src="{{url_for('static',filename='lower_0.jpeg')}}" width="40%" height="60%"></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox2" value="pant2">
+                          <label class="form-check-label" for="inlineCheckbox2"><img src="{{url_for('static',filename='lower_1.jpeg')}}" width="40%" height="60%"></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox3" value="pant3">
+                          <label class="form-check-label" for="inlineCheckbox3"><img src="{{url_for('static',filename='lower_2.jpeg')}}" width="40%" height="60%"></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox3" value="pant4">
+                          <label class="form-check-label" for="inlineCheckbox3"><img src="{{url_for('static',filename='lower_5.jpeg')}}" width="40%" height="60%"></label>
+                        </div>
+                      </div>
+                      <div class="col sm-5 form-group">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox1" value="pant5">
+                            <label class="form-check-label" for="inlineCheckbox1"><img src="{{url_for('static',filename='lower_3.jpeg')}}" width="40%" height="60%"></label>
+                          </div>
+                          <div class="form-check form-check-inline" style="margin-top: 10%;margin-bottom: 10%;">
+                            <input class="form-check-input" type="checkbox" name="pants"  id="inlineCheckbox2" value="pant6">
+                            <label class="form-check-label" for="inlineCheckbox2"><img src="{{url_for('static',filename='lower_4.jpeg')}}" width="40%" height="60%"></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox3" value="pant7">
+                            <label class="form-check-label" for="inlineCheckbox3"><img src="{{url_for('static',filename='lower_6.jpeg')}}" width="40%" height="60%"></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="pants" id="inlineCheckbox3" value="pant8">
+                            <label class="form-check-label" for="inlineCheckbox3"><img src="{{url_for('static',filename='lower_7.jpeg')}}" width="40%" height="60%"></label>
+                          </div>
+                        </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <div style="margin: auto;">
+                <input type="submit" class="btn btn-primary mb-2" value="NEXT">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
