@@ -10,7 +10,7 @@ for i in range(10):
     final_list.append(option)
 print(final_list)
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URL')
 db=SQLAlchemy(app)
 class Entries(db.Model):
     id=db.Column(db.Integer,primary_key=True,autoincrement=True)
