@@ -2,7 +2,7 @@ from flask import Flask,render_template,url_for,request,redirect
 import random 
 import os
 from flask_sqlalchemy import SQLAlchemy
-clothes=os.listdir(r"static\images\upper_body")
+clothes=os.listdir(os.path.join(os.path.join("static","images"),"upper_body"))
 final_list=[]
 for i in range(10):
     option=random.choice(clothes)
