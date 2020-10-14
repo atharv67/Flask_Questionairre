@@ -72,7 +72,7 @@ def homepage1():
             pass
         finally:
             return redirect(url_for('homepage2'))
-    path="static\\images\\upper_body\\"+final_list[0]
+    path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[0])
     return render_template('homepage1.html',path=path)
 @app.route('/homepage2',methods=['POST','GET'])
 def homepage2():
@@ -120,7 +120,7 @@ def homepage2():
             pass
         finally:
             return redirect(url_for('homepage3'))
-    path="static\\images\\upper_body\\"+final_list[1]
+    path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[1])
     return render_template('homepage2.html',path=path)
 @app.route('/homepage3',methods=['POST','GET'])
 def homepage3():
@@ -168,7 +168,7 @@ def homepage3():
             pass
         finally:
             return redirect(url_for('homepage4'))
-    path="static\\images\\upper_body\\"+final_list[2]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[2])
     return render_template('homepage3.html',path=path)
 @app.route('/homepage4',methods=['POST','GET'])
 def homepage4():
@@ -216,7 +216,7 @@ def homepage4():
             pass
         finally:
             return redirect(url_for('homepage5'))
-    path="static\\images\\upper_body\\"+final_list[3]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[3])
     return render_template('homepage4.html',path=path)
 @app.route('/homepage5',methods=['POST','GET'])
 def homepage5():
@@ -264,7 +264,7 @@ def homepage5():
             pass
         finally:
             return redirect(url_for('homepage6'))
-    path="static\\images\\upper_body\\"+final_list[4]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[4])
     return render_template('homepage5.html',path=path)
 @app.route('/homepage6',methods=['POST','GET'])
 def homepage6():
@@ -312,7 +312,7 @@ def homepage6():
             pass
         finally:
             return redirect(url_for('homepage7'))
-    path="static\\images\\upper_body\\"+final_list[5]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[5])
     return render_template('homepage6.html',path=path)
 @app.route('/homepage7',methods=['POST','GET'])
 def homepage7():
@@ -360,7 +360,7 @@ def homepage7():
             pass
         finally:
             return redirect(url_for('homepage8'))
-    path="static\\images\\upper_body\\"+final_list[6]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[6])
     return render_template('homepage7.html',path=path)
 @app.route('/homepage8',methods=['POST','GET'])
 def homepage8():
@@ -408,7 +408,7 @@ def homepage8():
             pass
         finally:
             return redirect(url_for('homepage9'))
-    path="static\\images\\upper_body\\"+final_list[7]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[7])
     return render_template('homepage8.html',path=path)
 @app.route('/homepage9',methods=['POST','GET'])
 def homepage9():
@@ -456,7 +456,7 @@ def homepage9():
             pass
         finally:
             return redirect(url_for('homepage10'))
-    path="static\\images\\upper_body\\"+final_list[8]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[8])
     return render_template('homepage9.html',path=path)
 @app.route('/homepage10',methods=['POST','GET'])
 def homepage10():
@@ -504,7 +504,7 @@ def homepage10():
             pass
         finally:
             return redirect(url_for('thankyou'))
-    path="static\\images\\upper_body\\"+final_list[9]
+    path=path=os.path.join(os.path.join(os.path.join("static","images"),"upper_body"),final_list[9])
     return render_template('homepage10.html',path=path)
 @app.route('/thankyou')
 def thankyou():
